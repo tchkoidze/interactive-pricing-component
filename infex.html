@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>interactive-pricing-component</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Simple, traffic-based pricing</h1>
+      <p class="header-txt">
+        Sign-up for our 30-day trial. <br />
+        No credit card required.
+      </p>
+    </header>
+    <div class="pricing-card">
+      <div class="pricing-box">
+        <h2><span class="folowers-number">100K </span> &nbsp PAGEVIEWS</h2>
+        <div class="range-slider">
+          <input
+            type="range"
+            min="10000"
+            max="1000000"
+            name="views"
+            id="views"
+            step="1000"
+          />
+        </div>
+        <div class="price-tag">
+          <h3 class="amount">$16.00</h3>
+          <h3 class="period">/ month</h3>
+        </div>
+        <div class="billing-box">
+          <p class="monthly-Billing">Monthly Billing</p>
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider"></span>
+          </label>
+          <p class="yearly-billing">Yearly Billing</p>
+          <div class="discount-box">
+            <p class="discount">-25%</p>
+            <p class="discount-desktop">25% discount</p>
+          </div>
+        </div>
+      </div>
+      <div class="service-container">
+        <div class="service-box">
+          <p class="service">
+            <img src="./images/icon-check.svg" alt="check" /> Unlimited websites
+          </p>
+          <p class="service">
+            <img src="./images/icon-check.svg" alt="check" />100% data ownership
+          </p>
+          <p class="service">
+            <img src="./images/icon-check.svg" alt="check" />Email reports
+          </p>
+        </div>
+        <button class="cta-btn" type="button">Start my trial</button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
