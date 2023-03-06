@@ -51,6 +51,7 @@ pageviewsRange.forEach((i) => {
   });
 });
 
+/*how/ hide yearly discount*/
 switchBtn.addEventListener("click", () => {
   discountBox.classList.toggle("show");
   console.log("sete");
