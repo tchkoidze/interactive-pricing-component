@@ -13,6 +13,7 @@ const folowersNumber = document.querySelector(".folowers-number");
 pageviewsRange.forEach((i) => {
   i.addEventListener("input", (event) => {
     x = event.target.value;
+    /*slider range background size*/
     event.target.style.backgroundSize =
       (event.target.value * 100) / i.max + "%";
 
