@@ -153,7 +153,8 @@ h2 {
   gap: 10px;
 }
 
-.amount {
+.amount,
+.yearly-price {
   font-weight: 800;
   font-size: 32px;
   line-height: 44px;
@@ -163,13 +164,38 @@ h2 {
   color: #293356;
 }
 
-.period {
+.hide-amount {
+  display: none;
+}
+
+.yearly-price {
+  display: none;
+}
+
+.yearly-price-show {
+  display: block;
+}
+
+.period,
+.yearly {
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
   text-align: center;
   color: var(--text);
   color: #848ead;
+}
+
+.hide-period {
+  display: none;
+}
+
+.yearly {
+  display: none;
+}
+
+.show-yearly {
+  display: block;
 }
 
 .billing-box {
@@ -362,7 +388,8 @@ input:checked + .slider::before {
     order: 2;
   }
 
-  .amount {
+  .amount,
+  .yearly-price {
     font-size: 40px;
     line-height: 55px;
 
